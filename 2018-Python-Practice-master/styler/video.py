@@ -33,7 +33,7 @@ class Video:
 
             if(frame is None):
                 break
-            res = resize(frame,512, 512);
+            res = resize(frame,image_h, image_w);
             frames.append(res)
         
         self.frames = frames  # 5-3 let object have the result
